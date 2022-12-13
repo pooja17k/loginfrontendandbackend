@@ -1,0 +1,17 @@
+
+        <div class="container">
+            <br><br>
+            <h1>Please Sign In</h1><br>
+
+            <label for="lemail"><b>Email ID :</b></label>
+            <pre></pre>
+            <input type="text" placeholder="Enter Email" [(ngModel)]="cemail" name="cemail" id="lemail" required>
+            <pre></pre>
+            <label for="lpsw"><b>Password :</b></label>
+            <pre></pre>
+            <input type="password" placeholder="Enter Password" [(ngModel)]="cpassword" name="cpassword" id="psw" required>
+            <pre></pre>
+            <button  (click)=
+            "clientSignIn()" type="submit" class="loginbtn">Sign In</button>
+        </div>
+ 

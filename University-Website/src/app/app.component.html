@@ -1,0 +1,13 @@
+<html>
+  
+<div class="main">
+  <div class="header">
+    <div (click)="openPage('home')"  id="css">Home</div>
+    <div (click)="openPage('login')" id="css" *ngIf="!isLoggedIn">Login</div>
+    <div (click)="openPage('registration')" id="css" *ngIf="!isLoggedIn">Registration</div>
+    <div (click)="openPage('contact')" id="css">Contact</div>
+    <div (click)="openPage('logout')" id="css" *ngIf="isLoggedIn">Logout</div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+</html>
